@@ -7,6 +7,61 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
+        /* CSS selectors */  
+        /* Element selector */
+        div{
+            background-color: rgb(74, 109, 4);
+        }
+        /*Class Selector */
+        .red{
+            background-color: beige;
+        }
+        /* ID Selector */
+        #pink{
+            background-color: lightpink;
+        }
+        /* Child Selector */
+        .blue {
+            background-color: lightcoral;
+        }
+
+        /*If the parent n child elements are reffered using the same type of selector (here class) then the styling done on parent will dominate that done on child (here styling done on blue class dominates the styling done on orange class) but if they are called using different type of selectors, then the order of precedence is id>class>tag.*/
+       
+        .orange{
+            background-color: orange;
+        }
+        .blue > p{
+            background-color: lavender;
+        }
+
+        /* Descendant Selector*/
+
+        .five p{
+            background-color: orange;
+        }
+
+        /*Universal Selector*/
+        *{
+            margin: 0%;
+        }
+
+        /* Pseudo Selector*/
+
+        a:visited{
+            color: pink;
+        }
+        a:link{
+            color: red;
+        }
+        a:active{
+            background-color: blue;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        article:first-child{
+            background-color: red;
+        }
 
 
     </style>
@@ -14,6 +69,40 @@
 <body>
     <div>
         I am a div!
+    </div>
+    <div class="red">
+        I am another div!
+        <p>I am a para!</p>
+    </div>
+    <div class="red" id="pink">
+        I am third div!
+    </div>
+    <div class="blue">
+        <p class="orange">I am a para in fourth div!</p>
+        <h3>I am a heading in 4th div</h3>
+    </div>
+
+<!-- Testing Descendant selector -->
+
+    <div class="five">
+        <p>I am a para in fifth div!</p>
+        <article><p>I am another para inside article in 5th div!</p></article>
+        <div>
+            <p>I am a para inside div in 5th div!</p>
+        </div>
+    </div>
+
+<!-- Testing Descendant selector over -->
+    <div>
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.facebook.com" target="_blank">Go to Facebook</a>
+    </div>
+
+    <div class="one">
+        <article>I AM 1ST CHILD ARTICLE OF 6TH DIV HENCE I AM RED</article>
+        <p>I am first child of 6th div</p>
+        <p>I am second child of 6th div</p>
+
     </div>
     
 </body>
