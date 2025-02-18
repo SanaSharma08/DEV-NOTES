@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FROM TO APPLY FOR TA</h1>
+    <form action="post">
+        <label for="text1">Enter your username: </label>
+        <input type="text" name="username" id="text1" placeholder="Enter your username" required autofocus>
+        <!-- Making a Radio Button -->
+        <div>
+            <input type="radio" name="gender" id="male">
+            <label for="male">MALE</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">FEMALE</label>
+        </div>
+        <!-- MAKING A SUBSCRIBE CHECKBOX -->
+        <div>
+            <input type="checkbox" name="subcribe" id="subscribe">
+            <label for="subscribe">PLEASE SUBSCRIBE TO NEWSLETTER</label>
+        </div>
+        <!-- TEXTAREA -->
+        <div id="comm">
+            <label for="comment">ENTER YOUR COMMENT</label> <br>
+            <textarea name="comment" id="comment" rows="4" cols="50">ENTER COMMENT......</textarea>
+        </div>
+        <!-- MAKING A MULTICORRECT OPTION FORM -->
+        <div>
+            <h4>EDUCATION</h4>
+            <input type="checkbox" name="Edu" id="edu">
+            <label for="edu">10TH</label>
+            <input type="checkbox" name="Edu" id="edu1">
+            <label for="edu1">12TH</label>
+            <input type="checkbox" name="Edu" id="edu2">
+            <label for="edu2">UG</label>
+            <input type="checkbox" name="Edu" id="edu3">
+            <label for="edu3">PG</label>           
+        </div>
+        <!-- DROPDOWN using select tag-->
+        <div>
+            <select name="fruits" id="fruits">
+                <option value="APPLE">APPLE</option>
+                <option value="ORANGE">ORANGE</option>
+                <option value="CHERRY">CHERRY</option>
+            </select>
+        </div>
+        
+
+    </form>
+</body>
+</html>

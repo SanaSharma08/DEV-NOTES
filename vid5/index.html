@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGES-TABLES-LISTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img width= "200" height="200" src="train.png" alt="TRAIN IMAGE">
+    <img width="300" height="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Barbie_Logo.svg/640px-Barbie_Logo.svg.png" alt="Barbie logo" title="LOGO OF BARBIE">
+    <!-- <p>put only one attribute out of width n height to let auto adjust aspect ratio.</p> -->
+    <br>
+    <table>
+        <caption>EMPLOYEE DETAILS</caption>
+        <tr>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>FAV LANGUAGE</th>
+        </tr>
+        <tr>
+            <td>HARRY</td>
+            <td>DEV</td>
+            <td>JS</td>
+        </tr>
+        <tr>
+            <td>SANA</td>
+            <td>DEV</td>
+            <td>JS</td>
+        </tr>
+    </table>
+    <br>
+<!-- COLSPAN -->
+    <table>
+        <caption>COLSPAN</caption>
+        <tr>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>FAV LANGUAGE</th>
+        </tr>
+        <tr>
+            <td>HARRY</td>
+            <td>DEV</td>
+            <td>JS</td>
+        </tr>
+        <tr>
+            <td>SANA</td>
+            <td colspan="2">DEV</td>
+        </tr>
+    </table>
+    <br>
+<!-- ROWSPAN -->
+
+    <table>
+        <caption>ROWSPAN</caption>
+        <tr>
+            <th>NAME</th>
+            <th>DESIGNATION</th>
+            <th>FAV LANGUAGE</th>
+        </tr>
+        <tr>
+            <td>HARRY</td>
+            <td rowspan="2">DEV</td>
+            <td>JS</td>
+        </tr>
+        <tr>
+            <td>SANA</td>
+            <td>JS</td>
+        </tr>
+        <tr>
+            <td>OJAS</td>
+            <td>MANAGER</td>
+            <td>JAVA</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption>ADDING HEADER & FOOTER</caption>
+        <thead>
+            <tr>
+                <th>HEADER</th>
+                <th>HEADER</th>
+                <th>HEADER</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HARRY</td>
+                <td>DEV</td>
+                <td>JS</td>
+            </tr>
+            <tr> 
+                <td>SANA</td>
+                <td>DEV</td>
+                <td>JS</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>FOOTER</td>
+                <td>FOOTER</td>
+                <td>FOOTER</td>
+            </tr>
+        </tfoot>
+    </table>
+ <!-- LISTS  -->
+    <h2>Unordered List</h2>
+    <ul type="square">
+        <li>MANGO</li>
+        <li>APPLE</li>
+        <li>ORANGE</li>
+    </ul>
+
+    <h2>Ordered List</h2>
+    <ol type="a">
+        <li>MANGO</li>
+        <li>APPLE</li>
+        <li>ORANGE</li>
+    </ol>
+
+    <h2>Definition List</h2>
+    <dl>
+        <dt>MANGO</dt>
+        <dd>YELLOW</dd>
+        <dt>APPLE</dt>
+        <dd>RED</dd>
+        <dt>ORANGE</dt>
+        <dd>ORANGE</dd>
+    </dl>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+.head{
+    text-align: center;
+    background-color: bisque;
+}
+.header{
+    background-color: beige;
+}
+.audio{
+    background-color: rgb(196, 51, 130);
+    padding: 8px;
+    border: 5px;
+    border-radius: 4%;
+    color: blanchedalmond;
+}
+.PARA{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 6px;
+    background-color: bisque;
+}
+.footer{
+    background-color: pink;
+    padding: 8px;
+}
+.video{
+    background-color: rgb(25, 103, 134);
+    padding: 8px;
+    margin-left: 6px;
+    border: 4px;
+    border-radius: 4%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+}

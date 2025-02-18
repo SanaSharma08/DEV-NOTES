@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        li{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1 style="color: red;background-color:aqua">THREE WAYS TO CSS IN YOUR WEB PAGE</h1>
+    </header>
+    <main>
+        <div>
+            <ol>
+                <!-- first list item -->
+                <li><h3>Inline CSS :</h3> 
+                    <pre><code>
+                        &lt; p style="color: pink;" &gt;Lorem ipsum dolor sit amet.&lt; /p &gt;
+                    </code></pre>
+                </li>
+    
+                <!-- second list item -->
+    
+                <li><h3>Internal css: </h3>
+                    <pre>
+                        <code>
+                            &lt; style &gt; 
+                                div{
+                                    color: red;
+                                    background-color: yellow;
+                                }
+                            &lt; /style &gt; 
+                        </code>
+                    </pre>
+                </li>
+                <!-- third list item -->
+                <li><h3>External css: use link tag</h3>
+                    <pre>
+                        <code>
+                            &lt; link rel="stylesheet" type="text/css" href="style.css" &gt;
+                        </code>
+                    </pre>
+                </li>
+            </ol>
+        </div>
+        <div>
+            I am a good girl
+        </div>
+    </main>
+    <footer> Footer: li is styled using internal css (aquamarine bg), h1 using inline (blue bg n read h1 text) and li heading (h3: blue text over aquamarine bg) using external css. <br>
+    Copyright &copy; sana
+    </footer>
+</body>
+</html>
