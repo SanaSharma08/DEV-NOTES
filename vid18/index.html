@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS BOX MODEL</title>
+    <style>
+      /* CSS BOX MODEL */
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background-color: brown;
+      }
+      .box2{
+        color: beige;
+        padding: 10px;
+        /*Margin Collapse*/
+        margin: 30px;
+        border: 3px solid black;
+        /*Box sizing:border box= h of content + 2 x padding + 2 x border = 200px*/
+        height: 200px;
+        box-sizing: border-box;
+      }
+      .box1{
+        color: yellow;
+        padding: 10px;
+        margin: 25px;
+        border: 3px solid blue;
+        height: 200px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Multiple Class Assignment --> 
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+  </body>
+</html>
