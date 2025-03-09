@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade - CSS</title>
+    <style>
+        /*Simple Selectors*/
+        h1{
+            color: blue;
+        }
+        .red{
+            color: red;
+            /*color: pink !important;*/
+        }
+        .yellow{
+            color: yellow;
+        }
+        .purple{
+            color: purple;
+        }
+        [data-x=a]{  /*Attribute Selector*/
+            color: maroon;
+        }
+
+        /* Complex Selector: Selector Cocktail*/
+        div h1.red.purple[data-x]#sam{ /*1+1+10+10+10+100= 132 pts*/
+            color: blueviolet;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="red yellow purple" data-x="a" id="sam">CSS Specificity</h1>
+        <!-- <h1 style="color:black"  class="red yellow purple" data-x="a">CSS Specificity</h1> -->
+    </div>
+</body>
+</html>

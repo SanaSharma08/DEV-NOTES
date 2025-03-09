@@ -1,0 +1,12 @@
+ nav ul li{
+    list-style: none;
+    padding: 23px;
+    /* background-color: yellow; */
+    /* list-style-position: inside; */
+    /* list-style-type: "😆"; */
+    /* border: 2px solid black; */
+    /* list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH-o3MbyjHv5-Yq6tMdg4_NpHdyyLsxUou2Q&s") ; */
+}
+nav ul{
+    display: flex;
+}

@@ -1,0 +1,23 @@
+.box{
+    border: 2px solid blue;
+    padding: 34px;
+    width: 80vw;
+    margin: 23px auto;
+    box-shadow: 5px 5px 15px 5px #97b5de ;
+}
+.shadow{
+    text-shadow: 12px 13px 4px #f0c506;
+    color: blue;
+}
+.box2{
+    border: 2px solid blue;
+    padding: 15px;
+    margin: 40px;
+    outline: 4px dotted #eb9d2a;
+    outline-offset: 12px;
+
+}
+h1{
+    color: #f06406;
+    
+}

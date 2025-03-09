@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 80vw; /*80% of viewport width*/
+            height: 10vh; /*10% of viewport height*/
+            background-color: aquamarine;
+            box-sizing: border-box;
+            margin: auto; /* Only works for block elements like div*/
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Adjusting according to height*/
+        .container{
+            border: 3px solid blueviolet;
+            box-sizing: border-box;
+            width: 80vw;
+            min-height: 80vh; /* This container will always adjust to the height of 80% of viewport n it will keepon adjusting itself if you add in more content. If you add lesser content, then also the height will be 80% of viwport n the remaining space will still be there as blank space.*/
+            font-size: 16px;
+            background-color: pink;
+            margin: 23px auto;
+        }
+        .container p{
+            font-size: 2em;
+            width: 50%;
+            border: 2px solid purple;
+        }
+        .cont{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            background-color: yellow;
+            color: red;
+            font-size: 22px;
+            width: 80vw;
+        }
+        /* Adjusting according to width*/
+        .co{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: beige;
+            color: brown;
+            margin: 23px auto;
+            min-width: 80vw; /* Adjusting container according to width i.e min width will always be 80vw but it can expand as per requirement*/
+            height: 50vh;
+            /* if we put in fixed widths n heights using width n height attributes then if the content does not fit, it will overflow but if even one of the two attributes are adjustable, the content can fit. Generally the height is adjustable.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="co">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse perspiciatis fugiat neque maxime quae accusamus, officia voluptas iste dicta repudiandae pariatur magnam alias atque. Perferendis sequi doloremque, possimus consequatur dicta sint officiis veniam corporis reprehenderit necessitatibus laudantium blanditiis excepturi inventore itaque nam illo asperiores cupiditate velit sed ab numquam suscipit.
+        </p>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum at ducimus ullam eos sapiente distinctio neque aut rerum quaerat unde!</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis labore vel saepe rem doloremque ipsum a ea nostrum cum dolorum eos commodi quibusdam repellat minima porro hic, tempore repudiandae iusto quos quod dignissimos ad eius magnam! Omnis facere quaerat dolores excepturi dolor. Fuga ut tempore perferendis sunt delectus assumenda nisi quae maxime numquam. Tenetur nihil aliquid debitis, illo repellendus delectus repudiandae sunt excepturi, minima sit nesciunt molestiae ex quae ducimus minus. Sequi aut cum quia voluptas ipsum esse aliquam aspernatur dolorum. Minus doloribus expedita natus autem sint a molestias excepturi, laborum laboriosam blanditiis sunt cum asperiores hic voluptate quibusdam vel consectetur distinctio eveniet totam iure debitis porro commodi? Qui veniam temporibus, eum praesentium dolores repellendus soluta harum quis laudantium sequi iure nesciunt non doloremque dolorum voluptates itaque rerum numquam delectus totam nostrum ipsa! Nostrum soluta corporis eveniet assumenda necessitatibus maiores hic tempore unde accusamus, illum sed officiis autem consequatur est optio a. Expedita amet minima optio vel eum sequi in sint laborum sunt nisi. Sapiente et cum ipsam. Ea dolores id ut excepturi similique consectetur praesentium ipsa fugiat, quam illum optio sit iure nisi odio, quia sequi animi quisquam deserunt dolorem porro quos quas eaque reprehenderit recusandae? Illum harum voluptate corrupti incidunt nulla minus debitis quisquam a odio beatae! Corporis, cum odio. Repellat autem dolorum nisi maiores repudiandae eligendi nam vero, ipsam ipsum voluptates consequuntur, adipisci quisquam quia blanditiis unde velit optio corrupti neque doloribus laboriosam, doloremque possimus? Illo officia suscipit, sed, minima facere debitis maxime ut alias atque accusamus nihil neque nulla dolore sapiente tempora, aspernatur repellat dolorum quia officiis optio! Ut vitae provident voluptas, incidunt iure aspernatur libero iste saepe, commodi repellat necessitatibus autem? Rem quis dolorum, adipisci possimus consequuntur pariatur, nisi aperiam suscipit, laudantium odit cupiditate expedita optio dolorem culpa ratione quas eveniet tenetur tempora vero. Temporibus, minima. Vero, facere, eius, dolorum recusandae atque magni molestias minus dolore eos officiis dolorem a sunt suscipit. Accusamus, explicabo, repellat iste natus adipisci maiores quisquam expedita incidunt temporibus repellendus laboriosam non suscipit earum velit. Totam laboriosam voluptatibus, saepe a dolore consequatur, voluptatum cumque cupiditate voluptatem quis voluptate blanditiis impedit necessitatibus eos architecto eius maiores voluptates? Sequi blanditiis veniam molestiae libero, sit fuga dolorem officia quibusdam modi. Ipsam repellendus quam modi culpa illum sunt, dolore minima, neque inventore fuga porro nesciunt delectus veritatis sint esse commodi, quos placeat explicabo veniam laboriosam rerum beatae voluptate? Dignissimos nostrum sapiente ut a veniam exercitationem odit sit? Facilis corrupti sapiente ad, soluta exercitationem aut quod maxime alias sequi saepe doloremque nisi cum necessitatibus aspernatur doloribus! Modi illum eaque quo numquam obcaecati cum porro voluptates quos quaerat labore, vero voluptate rem id ex est blanditiis totam harum dolores maxime architecto sunt ratione atque neque nemo. Aperiam repudiandae tenetur assumenda temporibus enim fugit beatae aliquid placeat mollitia fuga. Beatae quas culpa commodi dolores accusantium, cumque ea deserunt qui in corrupti est atque natus expedita temporibus tempore nulla architecto? Voluptatibus repudiandae repellendus molestias et saepe tempora aliquid minima aut sit autem? Dignissimos, laboriosam cumque possimus fugit quidem nulla pariatur hic, saepe, eos nostrum beatae temporibus commodi debitis laudantium ullam? Iusto, dignissimos possimus, corrupti placeat minus, accusantium voluptatem nulla sint quo tempore velit amet soluta temporibus quae dolor magnam! Necessitatibus, quaerat voluptatibus esse dolorem, deserunt laudantium dolores nihil deleniti itaque quam veritatis error! Vel eveniet quae minima voluptatem unde rerum ipsa eaque, molestias facilis, repudiandae nulla, nostrum tenetur numquam. Unde quia cupiditate, voluptates, adipisci minus earum placeat nobis similique sunt reiciendis pariatur sint iure iusto? Id quis nulla ea eum numquam dolorum, tempore veniam expedita sapiente voluptates facere quas amet soluta beatae error facilis quod aliquam sed iure assumenda. Deserunt ullam deleniti quaerat sit modi debitis rerum nostrum hic, suscipit optio ipsum in porro quisquam repellendus. Id libero nostrum veritatis tenetur voluptas consectetur expedita voluptates, illo inventore, rem accusamus quisquam doloribus. Pariatur ab doloremque expedita magnam iusto eius sunt commodi id dolore enim ipsa voluptates temporibus, obcaecati voluptatibus consectetur quasi. Aperiam magni perferendis iusto animi porro enim tempore cupiditate eius, numquam illo hic rem, dolor molestiae distinctio consequatur nisi! Eveniet veritatis fugit quasi vel facere quos. Adipisci excepturi rerum id eius, consectetur quis! Eum tenetur libero cumque, velit ipsum laudantium saepe pariatur officia ipsa voluptate doloremque cupiditate tempore nulla. Dolorum officiis quas minus maiores magni culpa incidunt ad sint voluptates tenetur unde vitae optio veritatis, ducimus vel rem fugit esse quos nam consectetur placeat at dolor repellat blanditiis. Voluptate sunt iure nesciunt. Culpa, aperiam quibusdam sapiente incidunt voluptas possimus ab voluptates! Nam quae sed, alias, corporis minima fuga mollitia in, ipsum pariatur distinctio hic inventore rem! Autem reiciendis molestiae, dicta tempora eaque illo placeat eligendi iure nulla dolor harum numquam. Ducimus delectus sint alias ab rerum a, voluptates obcaecati officia. Voluptatem quam delectus nemo fugit eum minima illum impedit reprehenderit quae natus. Ratione rerum enim dicta voluptate, ullam deserunt expedita, nemo nam rem repudiandae accusantium quas delectus suscipit nisi. Eius rerum quod rem sunt ipsum, dolor, saepe praesentium amet maxime quam repellat beatae laudantium suscipit error, soluta reprehenderit vero incidunt repudiandae porro optio veritatis? Soluta neque maxime fuga at asperiores cupiditate, debitis distinctio harum odit, deleniti totam vero ratione exercitationem fugit repellat autem eos? Eos, nihil delectus ipsum magni vero exercitationem inventore similique deserunt molestias dolor. Quae delectus nostrum in itaque ut error perferendis perspiciatis quidem, neque eos sunt facere nisi pariatur, unde ea, inventore accusamus recusandae?
+    </div>
+    <div class="cont">
+        This is another container
+    </div>
+</body>
+</html>
