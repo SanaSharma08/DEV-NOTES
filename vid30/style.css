@@ -1,0 +1,32 @@
+:root{ /*Global Variables */
+    --color: rgb(185, 91, 214);
+    --seccolor: rgb(174,174,222);
+    --tcolor:blue; 
+    --defpad: 25px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: var(--color);
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    background-color: var(--seccolor);
+     /*Use of global var*/
+    padding: var(--defpad);
+    border: 2px solid var(--tcolor);
+}
+ul li:first-child{
+    --color: salmon; /*Local Variables */
+    background-color: var(--color);
+    color: var(--col,rgb(241, 13, 51)); /*Fallback value: incase varible does not exist or cannot be found*/
+}
+.container{
+    background-color: var(--seccolor);
+}
