@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLOAT & CLEAR</title>
+    <style>
+        img{
+            float: left; /*This image will float on the right of the webpage*/
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root; /*This incorporates child img into parent container .cards*/
+            
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(4){
+            background-color: beige;
+            clear: right; /*Restricts anything from floating on the right side of this component*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeS9uO8ubae6jjiVezJTHtIyq1Nfod7Uv-Og&s" alt="Loki: The God of Mischief" width="230" height="250">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem cumque ut sapiente cupiditate omnis dignissimos maiores qui hic, consectetur excepturi facere enim ipsum totam. Hic eum necessitatibus laborum neque assumenda natus dolores pariatur enim.</p>
+        </div>
+        <div class="card">CARD 2</div>
+        <div class="card">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis libero debitis, porro, optio numquam eos nisi alias mollitia quis eveniet corporis voluptas nostrum reprehenderit deserunt accusantium recusandae rerum facere. Totam amet maiores porro nesciunt unde! Saepe mollitia accusantium sint praesentium eveniet, repellat id nulla voluptatem doloribus iure quas. Eaque iste animi natus perspiciatis harum eveniet voluptatem quo pariatur! Est harum ut excepturi aspernatur nobis quas eligendi quibusdam sint aliquid minus accusamus voluptatibus, corrupti illum adipisci! Repellendus vitae eius odio veniam aliquid, quod labore nobis exercitationem? Laborum tenetur quasi facere magni quos et recusandae, iste, sit impedit id atque assumenda pariatur rerum, explicabo ipsum sint consequuntur cumque aliquam veniam natus velit. Et, eveniet labore tempora cum est sunt quisquam aspernatur saepe quibusdam aut expedita aliquam suscipit architecto explicabo? Repellat est quidem magnam ratione culpa molestiae illum, voluptate cum error, veniam illo, architecto temporibus recusandae fugit asperiores inventore incidunt porro ex? Unde molestiae voluptates itaque, quo rerum expedita sed provident soluta nesciunt quidem harum assumenda laboriosam inventore facere ipsa officia numquam dolorem neque repellendus, similique doloribus! Neque mollitia sapiente sint natus recusandae repudiandae consequuntur! Eligendi molestias harum quis dolor esse tenetur libero qui, aspernatur recusandae quas veritatis omnis veniam in, illo repudiandae.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

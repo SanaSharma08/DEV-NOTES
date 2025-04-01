@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+
+.nav li{
+    list-style: none;
+    padding: 4px;
+    margin: 5px;
+    color: #b3e9c7;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+.nav ul{
+    display: flex;
+    justify-content: left;
+}
+.nav{
+    background-color: #5603ad;
+    position: sticky;
+    width: 100vw;
+}
+
+/* Green Container Styling */
+
+.green{
+    background-color: #c2f8cb;
+    width: 95vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+}
+.pink{
+    background-color:#CE7DA5 ;
+    width: 30vw;
+    height: 60vh;
+    position: relative;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 5vw;
+    clear: both;
+    /* @media only screen and (max-height:944px) {
+        width: 200px;
+        height: auto; 
+    } */
+    
+}
+.blue{
+    background-color: #6665DD;
+    width: 30vw;
+    height: 60vh;
+    position: relative;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-right: 5vw;
+    margin-left: 25vw;
+    clear: both;
+    /* @media only screen and (max-height:944px) {
+        width: 200px;
+        height: auto;  */
+}
+
+
+/* Styling orange Logo */
+
+img{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 500px;
+    right: 0px;
+}
+
+/* Styling 2nd container */
+
+.sigma{
+    width: 70vw;
+    height: 40vh;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 40px;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    overflow-y: scroll;
+}
+
+/* Styling Footer */
+
+.footer li{
+    list-style: none;
+    line-height: 20px;
+}
+.footer *{
+    padding: 1px;
+}
+.footer{
+    background: #9B9ECE;
+    width: 100vw;
+    padding: 10px;
+    margin-top: 10px;
+    position: static;
+    bottom: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+}

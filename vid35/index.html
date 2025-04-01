@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selectors</title>
+    <style>
+        /* CSS selectors */
+        .box:first-child{
+            background-color: aquamarine;
+        }
+        .box::first-line{
+            color: cadetblue;
+        }
+        .box:nth-last-child(1){
+            background-color: lightgreen;
+        }
+        .box:nth-child(3) *{ /*Local Universal Selector*/
+            border: 2px solid black;
+        }
+        .box:nth-child(3){
+            border: 2px solid red;
+        }
+        #pink{
+            color: red;
+        }
+        .boxes::before{
+            content: "I am a before content";
+            color: red;
+        }
+        .boxes::after{
+            content: "This is after content";
+            color: blue;
+        }
+        ::selection{
+            color: orange;
+            background-color: greenyellow;
+        }
+        .box::first-letter{
+            color: red;
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: lime;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a Box !</div>
+        <div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dignissimos culpa magnam dicta quisquam architecto, ipsum delectus repellat numquam animi enim ipsam error sint temporibus quibusdam, veritatis odit inventore! Pariatur doloribus cum officiis, sint nam enim id laudantium repellendus praesentium, accusantium, vel earum incidunt aperiam.</div>
+        <div class="box">
+            <div class="box1">I am a child of 3rd box!</div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae aperiam blanditiis consequuntur aut quo quasi reiciendis dolores, voluptas maiores quos earum sequi? Sunt, eum earum?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum facere natus omnis itaque quidem odit ab, molestias aperiam sint sapiente.</p>
+        </div>
+        <div class="box" id="pink">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quidem nulla consectetur. Quaerat nostrum obcaecati facere reprehenderit unde, delectus hic. Nemo velit labore magni numquam laudantium sed nobis adipisci, quam odit corrupti repudiandae delectus non deleniti explicabo consequatur animi voluptas maiores magnam illo debitis culpa cumque recusandae mollitia vero? Debitis officia aut eaque corporis deleniti in pariatur, adipisci odit reiciendis.</p>
+        </div>
+        <label for="sam">Name: </label>
+        <input type="text" placeholder="Type your name here" id="sam">
+    </div>
+    
+</body>
+</html>
