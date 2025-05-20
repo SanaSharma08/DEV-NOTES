@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .img1{
+            filter: blur(10px);
+        }
+        .img2{
+            filter: brightness(400%) contrast(4);
+        }
+        .img3{
+            filter: grayscale(100%);
+        }
+        .img4{
+            filter: sepia(100%);
+        }
+        .img5{
+            filter: hue-rotate(50deg) drop-shadow(16px 16px 20px red);
+        }
+        .img6{
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+      <div class="imagee">
+        <img src="https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpeg?width=750&format=jpeg&optimize=medium" alt="image" class="img1 image">
+        <h3>Blur</h3>
+        <img src="https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpeg?width=750&format=jpeg&optimize=medium" alt="image" class="img2 image">
+        <h3>Brightness + Contrast</h3>
+        <img src="https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpeg?width=750&format=jpeg&optimize=medium" alt="image" class="img3 image">
+        <h3>Grayscale</h3>
+        <img src="https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpeg?width=750&format=jpeg&optimize=medium" alt="image" class="img4 image">
+        <h3>Sepia</h3>
+        <img src="https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpeg?width=750&format=jpeg&optimize=medium" alt="image" class="img5 image">
+        <h3>Hue Rotate + Drop Shadow</h3>
+        <img src="https://www.adobe.com/acrobat/hub/media_173d13651460eb7e12c0ef4cf8410e0960a20f0ee.jpeg?width=750&format=jpeg&optimize=medium" alt="image" class="img6 image">
+        <h3>Invert</h3>
+      </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 8</title>
+    <style>
+        .bg{
+            background-color: rgb(56, 125, 230);
+            width: 60vw;
+            height: 40vh;
+            position: relative;
+            
+        }
+        .ball{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: red;
+            border-radius: 70px;
+            width: 50px;
+            height: 50px;
+            animation: bounceX 3s linear infinite, bounceY 1s ease-out infinite alternate;
+            /* animation-duration: 6s;
+            animation-timing-function: ease-in;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards; */
+        }
+
+        @keyframes bounceX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes bounceY {
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+        /*
+        @keyframes bounce {
+            0%{
+                transform: translateY(0);
+            }
+            20%{
+                transform: translateY(-100px) translateX(60px);
+            }
+            40%{
+                transform: translateY(0px) translateX(100px);
+            }
+            60%{
+                transform: translateY(-200px) translateX(150px);
+            }
+            80%{
+                transform: translateY(0px) translateX(250px);
+            }
+            100%{
+                transform: translateY(0px) translateX(250px);
+            }
+            
+        }*/
+    </style>
+</head>
+<body>
+    <!-- make the ball bounce -->
+     <div class="bg">
+        <div class="ball"></div>
+     </div>
+</body>
+</html>

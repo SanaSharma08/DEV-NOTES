@@ -1,0 +1,1 @@
+console.log(n1.concat(n2,"Bhai","rahul"));
