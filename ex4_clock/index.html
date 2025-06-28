@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+        body{
+            background-color: pink;
+        }
+        .container{
+            font-family: "Orbitron", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 100px;
+            border: 2px dashed white;
+            color: white;
+            height: 400px;
+            font-size: 170px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <script>
+        setInterval(()=>{
+            let date=new Date();
+            let time = date.getHours() + ":"+ date.getMinutes() + ":" + date.getSeconds();
+            document.querySelector(".container").textContent=time;
+        },1000);
+
+        //practicing async await & promises.
+        //async function getTime(){
+        //    return new Promise((resolve,reject)=>{
+         //       let date=new Date();
+         //       if(date.toString()!=""){
+         //           let time = date.getHours() + ":"+ date.getMinutes() + ":" + date.getSeconds();
+         //           resolve(time);
+         //       }
+         //       reject("Time not fetched");
+         //   })
+       // }
+       // async function print(){
+        //    setInterval(async ()=>{
+        //        let time=await getTime();
+        //        document.querySelector(".container").textContent=time;
+        //    },1000);
+        //}
+        //print();
+    </script>
+</body>
+</html>

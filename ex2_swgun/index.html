@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake-water-gun</title>
+    <style>
+        body{
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-between;
+            gap: 50px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(255, 145, 0);
+        }
+        .box{
+            text-align: center;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            gap: 30px;
+        }
+        p{
+            margin: 0;
+        }
+        button{
+            border-radius: 10px;
+            border: transparent;
+            background-color:rgb(255, 145, 0) ;
+            color: beige;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>- SNAKE - WATER - GUN -</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ex harum reprehenderit veritatis quisquam non pariatur vel, esse necessitatibus molestias quasi, minus saepe dolorum? Amet veniam autem, illum tempore quisquam laborum sed, quidem placeat iste quam eius animi quo. Distinctio perspiciatis repellat labore excepturi molestiae?</p>
+        <p>Continue playing snake water gun using the button below</p>
+        <button id="btn">Start Game</button>
+    </div>
+    <script>
+
+        let elem=document.getElementById("btn");
+        elem.addEventListener("click", () =>{
+            let user = prompt("Enter your call","snake/water/gun");
+            let isSure = confirm(`Are you sure about your choice: ${user}`);
+            if(isSure){
+                user=(user.toUpperCase()).trim(); // to even out errrors due to case sensitivity in user input.
+                let choices = ["SNAKE","WATER","GUN"];
+                let random_index=Math.floor(Math.random()*3);
+                let computer_choice = choices[random_index];
+                if(user == computer_choice){
+                    alert("TIE!!");
+                }
+                else if((user=="SNAKE" && computer_choice=="WATER") || (user=="WATER" && computer_choice=="SNAKE" )){
+                    if(user=="SNAKE"){
+                        alert("Computer said WATER : YOU WIN!");
+                    }
+                    else{
+                        alert("Computer said SNAKE : YOU LOSE!");
+                    }
+                }
+                else if((user=="GUN" && computer_choice=="SNAKE") || (user=="SNAKE" && computer_choice=="GUN" )){
+                    if(user=="GUN"){
+                        alert("Computer said SNAKE : YOU WIN!");
+                    }
+                    else{
+                        alert("Computer said GUN : YOU LOSE!");
+                    }
+                }
+                else if((user=="GUN" && computer_choice=="WATER") || (user=="WATER" && computer_choice=="GUN" )){
+                    if(user=="WATER"){
+                        alert("Computer said GUN : YOU WIN!");
+                    }
+                    else{
+                        alert("Computer said WATER : YOU LOSE!");
+                    }
+                }
+                else{
+                    alert("INVALID ENTRY : TRY AGAIN!");
+                }
+            }
+            else{
+                alert("Round Cancelled");
+            }
+        })
+    </script>
+</body>
+</html>

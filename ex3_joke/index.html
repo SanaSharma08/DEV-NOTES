@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        .box{
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .container{
+            position: relative;
+            z-index: 2;
+            width: 90vw;
+            height: 80vh;
+            margin: auto;
+            border: 2px solid rgb(71, 41, 2);
+            margin-top: 50px;
+            text-align: center;
+            color: rgb(73, 42, 2);
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 70%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <video src="https://cdn.pixabay.com/video/2023/03/28/156413-812554916_tiny.mp4" autoplay loop muted></video>
+        <div class="container">
+            <h2>🙀 JOKES ON YOU 🙀</h2>
+        </div>
+    </div>
+    <script>
+        let jokes = [
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "I'm reading a book on anti-gravity. It's impossible to put down!",
+            "Why did the math book look sad? Because it had too many problems.",
+            "Parallel lines have so much in common… it’s a shame they’ll never meet.",
+            "What do you call fake spaghetti? An *impasta*!",
+            "Why don’t skeletons fight each other? They don’t have the guts.",
+            "I told my computer I needed a break, and now it won’t stop sending me KitKat ads.",
+            "What did the zero say to the eight? Nice belt!",
+            "Why did the scarecrow win an award? Because he was outstanding in his field.",
+            "Why can't you give Elsa a balloon? Because she will let it go!"
+            ];
+        function tellJoke(arr){
+            let joke=document.createElement('div');
+            joke.className="joke";
+            let random=Math.floor(Math.random()*arr.length);
+            joke.innerHTML=`<p>${arr[random]}</p>`;
+            joke.style.color="rgb(73, 42, 2)";
+            joke.style.fontSize="50px";
+            joke.style.fontWeight="bolder";
+            document.querySelector(".container").append(joke);
+        }
+        tellJoke(jokes);
+    </script>
+</body>
+</html>

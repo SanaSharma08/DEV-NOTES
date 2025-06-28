@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+        .container{
+            border: 2px solid black;
+            width: 90vw;
+            margin: auto;
+            font-family: "Caveat", cursive;
+        }
+        .head{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .b1 , .b3{
+            width: 20%;
+        }
+        .b3{
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        .b2{
+            width: 60%;
+            text-align: center;
+            padding-left: 20px;
+            border-left: 2px solid red;
+            border-right: 2px solid red;
+        }
+
+        .foot{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            border-top:2px solid black;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px 0px;
+        }
+        .foot button{
+            padding: 5px 10px;
+            border-radius: 30px;
+            border: transparent;
+            background-color: navy;
+            color: white;
+            font-weight: bold;
+        }
+        .line{
+            font-weight: bold;
+        }
+        p{
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- THIS CODE DOES NOT SAVE TO LOCAL STORAGE : IT IS MADE FROM THE KNOWLEDGE SO FAR -->
+    <!-- Title : todo
+    current date
+    notebook ui
+    Storing todo's
+    options: create, delete , access all todos -->
+    <div class="container">
+        <div class="head">
+            <div class="b1"></div>
+            <div class="b2"><h1>To Do</h1></div>
+            <div class="b3"></div>
+        </div>
+        <div class="foot">
+            <button id="add">Add Action</button>
+            <button id="del">Delete Action</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("Test.js has been put in the script successfully");

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <style>
+      .child {
+        background-color: aquamarine;
+        border: 2px solid black;
+        padding: 34px;
+        margin: 34px;
+      }
+      .childContainer {
+        background-color: beige;
+        padding: 34px;
+        margin: 34px;
+        border: 2px solid black;
+      }
+      .container {
+        background-color: yellow;
+        padding: 14px;
+        margin: 14px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="childContainer">
+        <div class="child">I am a child</div>
+      </section>
+    </div>
+    <script>
+              document.querySelector(".child").addEventListener("click",(e)=>{
+                  e.stopPropagation();
+                  alert("Child was clicked!");
+              });
+              document.querySelector(".childContainer").addEventListener("click",()=>{
+                  alert("Child Container was clicked!");
+              });
+              document.querySelector(".container").addEventListener("click",()=>{
+                  alert("Container was clicked!");
+              });
+              function colorbox(){
+                let min=0;
+                let max=255;
+                let num1 = Math.ceil(Math.random() * (max - min + 1)) + min;
+                let num2 = Math.ceil(Math.random() * (max - min + 1)) + min;
+                let num3 = Math.ceil(Math.random() * (max - min + 1)) + min;
+                var color=`rgb(${num1} , ${num2} , ${num3})`;
+                return color;
+            }
+            /* let a= setInterval(() =>{
+                  document.querySelector(".childContainer").style.backgroundColor=colorbox();
+              }, 1000);
+            console.log(a);*/
+            let b= setTimeout(() =>{
+                  document.querySelector(".childContainer").style.backgroundColor=colorbox();
+              }, 3000);
+            console.log(b);
+    </script>
+  </body>
+</html>
